@@ -1,0 +1,266 @@
+html, body{
+  height: 91%;
+  width: 100%;
+}
+/*for main*/
+#mapid { 
+    z-index: 0;
+    height: 93%; 
+    width: 55%; 
+    position: fixed;
+}
+/*for sticky menu bar*/
+#stickstuff { 
+    z-index: 1;
+    top: 0;
+    position: relative;
+    width: 80%;
+}
+#stickstuff.stick {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+/*for index*/
+#map1 { 
+    position: absolute;
+    display: inline-block;
+    width: 70%; 
+    height: 92%;
+}
+/*User info*/
+.profile_info{
+    z-index: 3;
+    right: 0px;
+    position: fixed;
+    background-color: #383838;
+    margin: 0px;   
+    padding-left: 5.5%;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    text-align: right;
+    display: inline-block;
+    color: white;
+}
+/*Logout button (link)*/
+.logout a:any-link{
+    font-weight: 700;
+    color: #888;
+}
+.logout a:hover{
+    color: tomato;
+}
+/*Input dates button*/
+#datess{
+    position: static;
+    height: 45px;
+    background-color: #505050;
+    color: #aaa;
+    border: none;
+    padding: 0px 12px;
+    text-align: center;
+    text-decoration: unde;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    z-index: 1;
+    width: 200px;   
+}
+#datess:hover{
+    background-color: #505050 ;
+    color: #fff;
+    text-decoration: underline;
+
+}
+/*Input time button*/
+#time_picker{
+    position: static;
+    height: 45px;
+    background-color: #505050;
+    border: none;
+    color: #888;
+    padding: 0px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px -5px;
+    z-index: 1;
+    width: 200px;
+} 
+#time_picker:hover{
+    background-color: #505050 ;
+    color: #aaa;
+    text-decoration: underline;
+}
+/*Charts*/
+#chartdiv {
+    width: 45%;
+    z-index: 0;
+    margin-top: 35px;
+    left: 55%;
+    right: 20px;
+    position: absolute;
+	float:right; 
+	
+}
+/*Buttons on top*/
+#drawPolygon
+{
+    position:static;
+    width: 15%;
+    height: 45px;
+    background-color: #383838;
+    border: none;
+    color: white;
+    padding: 0px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px -5px;
+    cursor: pointer;
+}
+/*Finish Drawing and Don't upload locations*/
+#stopDraw, #getData
+{
+    position:static;
+    width: 22%;
+    height: 45px;
+    background-color: #383838;
+    border: none;
+    color: white;
+    padding: 0px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px -5px;
+    cursor: pointer;
+}
+/*Top buttons*/
+#search, #MapToggle, #getCoordinates, #myDropdown {
+    position:static;
+    z-index: 1;
+    height: 45px;
+    background-color: #383838;
+    border: none;
+    color: white;
+    padding: 0px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px -5px;
+    cursor: pointer;
+}
+/*Hovers*/
+#drawPolygon:hover, #stopDraw:hover, #getData:hover, #search:hover, #MapToggle:hover, #getCoordinates:hover, #myDropdown:hover {
+    background-color: #1c8adb ;
+    color: 000;
+}
+#myDropdown:focus
+{ background-color: #383838;
+    color: white;}
+
+/*Stats and history link button*/
+.stats .stats2 {
+    border: none;
+    height: 45px;
+    width: 31%;
+    background-color: #383838;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+.stats2:hover, .stats2:active {
+    border: none;
+    background-color: #1c8adb;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*Ecological dropdown*/
+#monthdropdown
+{
+    z-index: 1;
+    position:fixed;
+    height: 45px;
+    background-color: #383838;
+    border: none;
+    color: white;
+    padding: 0px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px -5px 0px -10px;
+    cursor: pointer;
+}
+#monthdropdown:hover
+{    
+    background-color: #1c8adb ;
+    color: 000;  
+}
+#monthdropdown:focus
+{
+    background-color: #383838;
+    color: white;
+}
+/*Information line*/
+#range_record
+{
+    position: absolute;
+    margin-left: 720px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+/*Information line between charts*/
+#your_score
+{
+    text-align: center;
+}
+/*map, browse and upload*/
+.contents
+{
+    height: 93%;
+
+}
+/*Position of info on the right*/
+#myForm
+{
+    color: black;
+    position: absolute;
+    display:inline-block;
+    text-align: center;
+    width: 20%;
+    height: 40%;
+    margin: 15% 10% 0% 75%;
+}
+/*Upload button for index*/
+#upload
+{
+    background-color: #383838;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    width: 50%;
+}
+#upload:hover
+{
+    color: black;
+    background-color: lightgreen;
+}
+/*Browse file background*/
+#fileToUpload
+{
+    border-radius: 0px;
+    background-color: #383838;
+    color: white;
+}

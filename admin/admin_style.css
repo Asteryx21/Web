@@ -1,0 +1,284 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+html, body, #mapadmin {
+  height: 100%;
+  width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+	background-color: #F5F5F5;
+    float: right;
+    top: 5px;
+    height: 50px;
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+	border-radius: 3px;"
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+	border-radius: 3px;"
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.sidebar {
+    width: 0;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-left: 0px;
+    border-radius: 0px;
+	background-blend-mode: color-burn;
+	opacity: 0.9;
+}
+/*.show {display:block;}*/
+
+/*Logout*/
+.sidebar a {     
+    vertical-align: middle;
+    text-align: center;
+    margin: 10px;
+    padding: 2px 14px 2px 18px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1c8adb;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: tomato;
+    text-decoration: none;
+}
+/*Close sidebar button*/
+.sidebar .closebtn {
+    vertical-align: middle;
+    text-align: center;
+    margin: 10px;
+    padding: 2px 14px 2px 18px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1c8adb;
+    transition: 0.3s;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 25px;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+.sidebar .closebtn:hover {
+  background-color: #000;
+	color: lightblue;
+}
+/*Open sidebar button*/
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+	border-radius: 25px;
+    border: none;
+}
+.openbtn:hover {
+    background-color: #1c8adb;
+    color: #fff;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 4px 10px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #1c8adb;
+    color: #fff;
+}
+input[type=text]:hover{
+    background-color: lightskyblue;
+    color: black;
+}
+#myDropdown{
+    width: 100%;
+    padding: 4px 10px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #1c8adb;
+    color: #fff;
+}
+#myDropdown:hover{
+    background-color: lightskyblue;
+    color: #000;    
+}
+.profile_info{
+    position: absolute;
+    vertical-align: middle;
+    text-align: center;
+    margin: 10px;
+    padding: 2px 14px 2px 55px;
+    margin-top: 50px;
+    bottom: 10px;
+    text-align: center;
+    color: white;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+  z-index:1;
+  position:absolute;
+  top:20px;
+  left:10px;
+  width:100px;
+  height:100px;
+}
+
+.sidebar .download_button{
+    color: #fff;
+	background-color: cadetblue;
+	z-index:1;
+	width: 43%;
+	height:50px;
+	border-radius: 25px;
+    border: none;
+    text-align: center;
+    padding: 6px;
+    margin: 0px 10px 10px 10px;
+}
+.sidebar .download_button:hover
+{
+    cursor: pointer;
+    background-color: lightskyblue;
+}
+.sidebar .clear_map_btn{
+    color: #fff;
+	background-color: #1c8adb;
+	z-index:5;
+	width: 90%;
+	height:50px;
+	border-radius: 25px;
+    border: none;
+    text-align: center;
+    padding: 6px;
+    margin: 0px 10px 10px 10px;
+    opacity: 0.9;
+}
+.sidebar .clear_map_btn:hover
+{
+    cursor: pointer;
+    background-color: lightskyblue;
+    color: #000;
+}
+.sidebar .show_history_btn{
+	color: #fff;
+	background-color: #1c8adb;
+	z-index:1;
+	width: 90%;
+	height:50px;
+	border: none;
+	border-radius: 25px;
+    text-align: center;
+	margin: 40px 10px 10px 10px;
+}
+.sidebar .show_history_btn:hover
+{
+    cursor: pointer;
+    color: black;
+    background-color: lightskyblue;
+}
+
+.sidebar .download_json{
+	background-color: cadetblue;
+	z-index:1;
+	width: 90%;
+	height:50px;
+	border-radius: 25px;
+    border: none;
+    text-align: center;
+    padding: 6px;
+    margin: 0px 10px 10px 10px;
+}
+.sidebar .download_json:hover
+{
+    cursor: pointer;
+    color: black;
+    background-color: lightskyblue;
+}
+.sidebar .xml
+{
+    
+    position: relative;
+    float: right;
+    display: inline-block;
+    color: #000;
+	background-color: cadetblue;
+	z-index:1;
+	width: 43%;
+	height:50px;
+	border-radius: 25px;
+    border: none;
+    text-align: center;
+    padding: 6px;
+    margin: -60px 15px 10px 10px; 
+}
+.sidebar .xml:hover
+{
+    cursor: pointer;
+    background-color: lightskyblue;
+    color: #000;
+}
+.dash_btn{
+	color: white;
+	background-color: #000;
+	z-index:1;
+	position:absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 120px;
+	height: 50px;
+	border: none;
+	border-radius: 30px;
+	margin: 50px;
+}
+
+.dash_btn:hover{
+    cursor: pointer;
+    background: #1c8adb;
+    color: white;
+}
+/*Apply Button*/
+#but1
+{
+    width: 100%;
+    padding: 4px 10px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: cadetblue;
+    color: black;   
+}
+#but1:hover
+{    
+    background-color: lightskyblue;
+    color: #000; 
+}

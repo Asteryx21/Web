@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    margin: 0% 5% 0% 3%;
+}
+.clear_db_btn{
+    vertical-align: top;
+    width: 100px;
+    float: left;
+    border: none;
+    background: #000;
+    color: #ffffff !important;
+    font-weight: 100;
+    margin-left: 100%;
+    margin-bottom: 0%;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    display: inline-block;
+}
+.clear_db_btn:hover{
+    color: #000 !important;
+    font-weight: 100 !important;
+    background-color: tomato;
+}
+#chartdiv{
+	width:100%;
+	display:inline-block;
+}
+
+.button [type="submit"] {
+vertical-align: top;
+float: left;
+border: none;
+margin-left: 5%;
+margin-bottom: -10%;
+background: #000;
+color: #ffffff !important;
+font-weight: 100;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 30px;
+display: inline-block;
+}
+
+.button:hover [type="submit"] {
+color: #fff !important;
+background-color: #1c8adb;
+}
+
+
+.Titlos{
+    margin: 0% 20% 0% 40%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
